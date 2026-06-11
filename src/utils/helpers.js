@@ -1,0 +1,2 @@
+export const generateId = () => Date.now() + Math.floor(Math.random() * 10000)
+export const escapeHtml = (str) => { if (!str) return ''; return str.replace(/[&<>'"]/g, m => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;' }[m])) }
